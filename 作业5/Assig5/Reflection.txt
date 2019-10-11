@@ -1,0 +1,33 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+Note: I have changed the code about the RunImageRenderer method so I
+submitted it.
+
+Questions for Reflection: 
+=========================
+
+1. For the Core of ImageRenderer, you didn't need to use
+while(scan.hasNext()), but for the Completion (animated images) you did need to
+use while(scan.hasNext()). Explain the difference.
+
+If you don't use while(scan.hasNext()), then the program will only read 
+the first picture, but a moving picture is made up of many pictures,
+ so a loop must be added to let the program read the file continuously 
+until all the data has been read.
+
+2. If an image was standard SVGA size (800x600), how big might a ppm file of the
+image be, given that each character in the file (including the spaces) requires
+1 byte?  How much worse is this than a typical jpg or png file of the same
+number of pixels?  (you may need to go and find some typical images that are
+about 800x600 pixels).
+
+A pixel needs to write 3 numbers and 3 spaces in the file, 
+assuming that each number occupies 2 bytes on average, then a pixel It takes 9 
+bytes and 800 * 600 pictures have 480000 pixels, so it takes about 4320000 bytes. 
+Converted to 4218.75 kb, it is about 4.12 MB, which is about 5 times the size 
+of a normal jpg or png file.
+
+

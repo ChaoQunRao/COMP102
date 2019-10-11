@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=ImageRenderer
+comment0.text=\ Renders\ plain\ ppm\ images\ onto\ the\ graphics\ panel\r\n\ \ ppm\ images\ are\ the\ simplest\ possible\ colour\ image\ format.\r\n
+comment1.params=
+comment1.target=void\ renderImageCore()
+comment1.text=\ Core\:\r\n\ Renders\ a\ ppm\ image\ file.\r\n\ Asks\ for\ the\ name\ of\ the\ file,\ then\ calls\ renderImageHelper.\r\n
+comment2.params=sc
+comment2.target=void\ renderImageHelper(java.util.Scanner)
+comment2.text=\ Core\:\r\n\ Renders\ a\ ppm\ image\ file.\r\n\ Renders\ the\ image\ at\ position\ (LEFT,\ TOP).\r\n\ Each\ pixel\ of\ the\ image\ \ is\ rendered\ by\ a\ square\ of\ size\ PIXEL_SIZE\r\n\ Assumes\ that\r\n\ -\ the\ colour\ depth\ is\ 255,\r\n\ -\ there\ is\ just\ one\ image\ in\ the\ file\ (not\ "animated"),\ and\r\n\ -\ there\ are\ no\ comments\ in\ the\ file.\r\n\ The\ first\ four\ tokens\ are\ "P3",\ number\ of\ columns,\ number\ of\ rows,\ 255\r\n\ The\ remaining\ tokens\ are\ the\ pixel\ values\ (red,\ green,\ blue\ for\ each\ pixel)\r\n
+comment3.params=
+comment3.target=void\ renderAnimatedImage()
+comment3.text=\ Completion\r\n\ Renders\ a\ ppm\ image\ file\ which\ may\ be\ animated\ (multiple\ images\ in\ the\ file)\r\n\ Asks\ for\ the\ name\ of\ the\ file,\ then\ renders\ the\ image\ at\ position\ (LEFT,\ TOP).\r\n\ Each\ pixel\ of\ the\ image\ \ is\ rendered\ by\ a\ square\ of\ size\ PIXEL_SIZE\r\n\ Renders\ each\ image\ in\ the\ file\ in\ turn\ with\ 200\ mSec\ delay.\r\n\ Repeats\ the\ sequence\ 3\ times.\r\n
+comment4.params=f
+comment4.target=void\ runAgain(java.io.File)
+comment5.params=
+comment5.target=void\ Challenge()
+comment5.text=\ Challenge\r\n\ This\ method\ is\ not\ a\ good\ way\ to\ solve\ it,it\ is\ just\ satisfied\ about\ this\ assigment\r\n\ Butit\ takes\ some\ time\ to\ run\ the\ program\ because\ I\ copied\ the\ file\ completely\ (\ without\ the\ comments\ )\r\n\ and\ then\ read\ it\ according\ to\ the\ above\ code.\ \r\n\ And\ for\ this\ part\ I\ changed\ the\ code\ of\ renderImageHelper\ method(To\ let\ it\ can\ read\ "pgm"\ file)\r\n
+numComments=6
