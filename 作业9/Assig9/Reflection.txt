@@ -1,0 +1,39 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+Note that this is a description of this operating procedure:
+Compared with this job requirement, I added more functions. back button is used to return to the previous picture
+ ( invalid for length and width changes ), while expand is required to be completed by the challenge part. On top of this, 
+I added a new function. Click ExpendWithMouse to open and click to enlarge the picture. The bottom two silders are 
+used to change the size of the picture. However, if you want to save your adjusted picture size, I only provide a way 
+to save an integer multiple, that is, if you enlarge the picture by more than 2 times, clicking Save will automatically 
+save the enlarged picture by an integer multiple.
+
+Questions for Reflection: 
+=========================
+
+
+1. Some of the methods in the ImageProcessor program could be done in two
+different ways: "in-place" (only using the array containing the image), or
+using a temporary array to store the image as it was being processed. Discuss
+the advantages and disadvantages of the two approaches. 
+
+When we only use " in place" way, we can easily change the size of the values of the array elements.
+ If we use temporary array to store pictures, we can exchange the elements in the array more easily. 
+For example, it is better for us to use the latter method to rotate the pictures, and it is better for us to 
+use the previous method if the colors of the pictures are darker or lighter.
+
+The disadvantage of " in place" is that it is difficult to deal with complex 
+problems, such as swapping array elements or requiring expend pictures.
+
+One of the big disadvantages of using temporary array is that it adds a lot of computation, 
+because traversing an array requires nesting of two for loops, using temporary array 
+usually requires many for loops. Another disadvantage that I think is very important is that
+ most of the time we pass the changed array to the current array directly with code such as
+                               "this. image = newImage(temporary array)", 
+but sometimes it is especially important to pay attention to the address instead of the value
+ stored in the image array memory and pass only the address of the local array. Most of the time, 
+when you want to assign values directly to image arrays, you'd better use the for loop to change
+ the value of each element, and passing the address can easily lead to misunderstandings later.

@@ -1,0 +1,4 @@
+Assignment2_marks
+Numbers: 6
+Average: 51.00 
+Maximum mark: 88
