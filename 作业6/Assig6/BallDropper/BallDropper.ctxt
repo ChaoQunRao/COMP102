@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.target=BallDropper
+comment0.text=\ Runs\ a\ simulation\ of\ balls\ falling\ to\ the\ ground.\r\n\ \ \ \ \ \ creates\ two\ DroppingBalls\r\n\ \ Repeatedly\r\n\ \ \ \ \ makes\ each\ ball\ take\ a\ step\ until\ it\ has\ got\ to\ the\ ground\r\n\ \ \ \ \ then\ make\ a\ new\ ball\ and\ starts\ the\ outer\ loop\ again.\r\n
+comment1.params=
+comment1.target=BallDropper()
+comment2.params=
+comment2.target=void\ setupGUI()
+comment3.params=
+comment3.target=void\ doChallenge()
+comment4.params=
+comment4.target=void\ dropTwoBalls()
+comment5.params=
+comment5.target=DroppingBall\ makeNewBall()
+comment5.text=Helper\ method\ that\ makes\ a\ new\ DroppingBall\ with\ random\ initial\ values
+comment6.params=arguments
+comment6.target=void\ main(java.lang.String[])
+comment6.text=Create\ a\ new\ BallDropper\ object\ and\ call\ bounceAround
+numComments=7

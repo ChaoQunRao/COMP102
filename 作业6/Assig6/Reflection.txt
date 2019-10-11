@@ -1,0 +1,62 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+
+Questions for reflection.
+=========================
+First, I have a suggestion for this assigment :
+In the Dropping Ball program, I think it should be a property of the ball to bounce or disappear 
+when the ball hits the boundary or the wall. Since Dropping Ball is used to describe the ball we created, 
+I think it may be better to put these judgments in the STEP method of the ball.
+(This is my personal opinion, because I think this will make the ball more flexible in practical application)
+
+1. Did your DroppingBall go straight, fall nicely by gravity, or did it bounce?
+My ball received the acceleration of gravity.
+
+I added a velocity attribute to it and set its acceleration.
+
+2. Did you work out how to make the ball go down at a steeper angle to take
+gravity into account? How did you do it?
+
+Yes, I have added the attribute of acceleration. I change the acceleration every second
+ and the speed every second through different accelerations.(I hope you can have a look at the comments on 
+" Stepfochalledge" in my program. I have some interesting findings).
+
+3. If you made your DroppingBall bounce, how did you tell when you needed to
+make a new ball?
+
+I'm sorry, I have some misunderstanding about this problem. I don't know the exact meaning of this problem.
+
+(1)If you mean how to express it in the program when I want to make a new ball, then I just need to create an object for Dropping Ball.
+In Java, it should be expressed as follows:
+DroppingBall ballA = new DroppingBall(10,Height,xSpeed,col //just some parameters);
+However, I learned a new way to create objects through the makenewball method provided in the job. before that, 
+I rarely used the method to return an object to assign a value to a variable 
+( in fact, I almost thought only the construction method would return an instance object of a class )
+
+(2)If you mean how do I know when to make a new ball, I think when I find that the height of the ball is 
+smaller than 0 or negative number, maybe I need to make a new ball, because your premise is that I 
+can make the ball bounce up, and the condition for me to judge whether the ball talks is to see if its coordinates are smaller 
+than 0, if it is actually much smaller than 0, then I should create a new ball to give up the original ball, 
+because there may be some mistakes in that ball.
+
+
+4. Why do we need a DroppingBall class? Couldn't the code all be part of the
+BallDropper class? What is the advantages of having it separate.
+
+Because a class is a description of a thing, it is best for a class to describe only one thing. For example, 
+the Dropping Ball class is a class that describes a falling ball, while Ball Dropper is a class that describes a falling ball.
+If you put all the methods and field into one class, the program will become very chaotic.
+ you don't know which method belongs to the ball itself and which belongs to the drop of the ball, 
+so you need to package the same class of methods and field into a class that is dedicated to describing the ball, 
+while the other class is dedicated to performing the action of dropping the ball.The advantage is that our ball has a clear classification, 
+it should have color, speed and a position, and its size should not be changed at will.
+
+5. Why do you need fields in the CircuitDrawer program?  Why couldn't you use
+local variables in the methods?  
+
+Because many methods in a class need to share multiple variables, 
+while local variables cannot be accessed by other methods, 
+variables in field are shared by all methods and can be modified by all methods, which is very flexible

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=DroppingBall
+comment0.text=\ DroppingBall\ represents\ a\ ball\ that\ falls\ towards\ the\ ground.\r\n\ \ \ \ Each\ time\ the\ step()\ method\ is\ called,\ it\ will\ take\ one\ step.\ \ \r\n\ For\ the\ Challenge\ part,\ the\ ball\ bounces\ when\ it\ reaches\ the\ ground.\r\n
+comment1.params=x\ h\ s\ c
+comment1.target=DroppingBall(double,\ double,\ double,\ java.awt.Color)
+comment1.text=\ Construct\ a\ new\ DroppingBall\ object.\r\n\ \ Parameters\ are\ the\ initial\ x\ position,\ the\ height\ above\ the\ ground,\r\n\ \ the\ initial\ speed\ to\ the\ right\ (ie,\ the\ horizontal\ step\ size),\ and\ \r\n\ \ the\ colour.\r\n\ \ Stores\ the\ parameters\ into\ fields\ (computing\ the\ y\ position\ from\ the\ height)\r\n\ \ and\ initialises\ the\ other\ fields,\r\n
+comment2.params=
+comment2.target=void\ step()
+comment2.text=\ Move\ the\ ball\ one\ step.\r\n\ \ Changes\ its\ height\ and\ x\ position\ using\ the\ vertical\ and\ horizonal\ steps\r\n\ \ If\ it\ would\ go\ below\ ground,\ then\ change\ its\ y\ position\ to\ ground\ level\r\n
+comment3.params=
+comment3.target=void\ stepForChalledge()
+comment3.text=I\ want\ to\ make\ a\ special\ explanation\ for\ this\ method.\r\n\ \ \ \ \ \ In\ fact,\ the\ Challenger\ and\ other\ parts\ share\ the\ above\ method\ method\ at\ the\ beginning,\ \r\n\ \ \ \ \ \ but\ when\ I\ try\ to\ run\ it,\ I\ found\ that\ the\ rebound\ height\ of\ the\ ball\ will\ increase\ a\ little\ \r\n\ \ \ \ \ \ every\ time\ after\ a\ period\ of\ time,\ which\ does\ not\ conform\ to\ the\ law\ of\ daily\ life.\ In\ theory,\ \r\n\ \ \ \ \ \ the\ bounce\ height\ of\ each\ ball\ should\ be\ the\ same\ as\ the\ last\ time.Then,\ I\ carefully\ checked\ all\ possible\ bug\ spots\r\n\ \ \ \ \ \ ,\ and\ finally\ I\ still\ didn't\ find\ out\ which\ program\ was\ out\ of\ order,\ but\ the\ next\ day\ I\ figured\ out\ why\ this\ happened.\r\n\ \ \ \ \ \ In\ Java,\ our\ time\ unit\ is\ "UI.sleep\ (time);".The\ actual\ parameters\ passed,\ such\ as\ UI.\ sleep\ (10),\ if\ I\ add\ this\ line\ of\ code\ \r\n\ \ \ \ \ \ every\ time\ I\ update\ the\ ball\ position\ and\ speed,\ the\ program\ will\ stop\ for\ 0.01\ seconds,\ but\ in\ fact\ the\ acceleration\ \r\n\ \ \ \ \ \ and\ position\ of\ the\ ball\ are\ changing\ at\ any\ time,\ which\ results\ in\ the\ acceleration\ of\ the\ ball\ actually\ falling\ less\ \r\n\ \ \ \ \ \ than\ the\ original\ acceleration,\ then\ it\ takes\ more\ time\ to\ reach\ the\ lower\ end,\ and\ then\ the\ landing\ speed\ is\ too\ \r\n\ \ \ \ \ \ high\ due\ to\ the\ time\ increase.\ And\ the\ time\ for\ the\ speed\ to\ decrease\ to\ zero\ will\ not\ change\ as\ it\ rises,\ \r\n\ \ \ \ \ \ but\ it\ has\ traveled\ a\ greater\ distance\ (\ because\ acceleration\ does\ not\ actually\ act\ on\ the\ ball\ at\ all\ times\ ).\ \r\n\ \ \ \ \ \ So\ in\ the\ end,\ my\ ball\ will\ play\ higher\ and\ higher,\ even\ if\ we\ only\ set\ the\ time\ to\ accelerate\ the\ ball\ \r\n\ \ \ \ \ \ for\ 0.01\ seconds,\ once\ the\ ball\ passes\ about\ 10\ seconds,\ its\ speed\ and\ maximum\ height\ will\ increase\ \r\n\ \ \ \ \ \ significantly.\ I\ didn't\ think\ of\ a\ way\ to\ make\ the\ ball\ in\ this\ program\ act\ on\ acceleration\ all\ the\ \r\n\ \ \ \ \ \ time\ as\ in\ real\ life,\ but\ I\ came\ up\ with\ a\ compromise,\ which\ is\ to\ make\ the\ unit\ time\ in\ the\ program\ \r\n\ \ \ \ \ \ approximate\ to\ real\ life\ as\ much\ as\ possible.\ I\ split\ 0.01\ second\ into\ 10\ 0.001\ seconds\ and\ accelerated\ \r\n\ \ \ \ \ \ the\ ball\ every\ 0.001\ second\ (\ I\ tried\ a\ smaller\ time,\ but\ the\ computer\ couldn't\ react,\r\n\ \ \ \ \ \ so\ the\ picture\ came\ out\ very\ smoothly\ )\ and\ update\ its\ position\ according\ to\ its\ new\ speed,\ \r\n\ \ \ \ \ \ and\ then,\ in\ order\ to\ prevent\ the\ program\ from\ not\ judging\ or\ not\ judging\ whether\ the\ ball\ is\ \r\n\ \ \ \ \ \ already\ on\ the\ floor\ when\ it\ hits\ the\ floor,\ I\ put\ the\ sentence\ of\ judging\ whether\ the\ ball\ hits\ the\ \r\n\ \ \ \ \ \ floor\ or\ the\ wall\ into\ the\ loop\ (\ if\ not,\ the\ ball\ will\ often\ fall\ some\ distance\ below\ the\ floor\ \r\n\ \ \ \ \ \ and\ then\ bounce\ back\ ).\ Finally,\ I\ finished\ this\ method.\ In\ fact,\ I\ don't\ quite\ agree\ with\ this\ method,\ \r\n\ \ \ \ \ \ because\ obviously\ this\ method\ will\ make\ my\ computer\ work\ very\ hard.\ If\ you\ have\ any\ better\ solution,\ \r\n\ \ \ \ \ \ you\ can\ inform\ me\ through\ the\ feedback\ of\ your\ work,\ thank\ you\!\r\n
+comment4.params=
+comment4.target=double\ getHeight()
+comment4.text=Return\ the\ height\ of\ the\ ball\ above\ the\ ground
+comment5.params=
+comment5.target=double\ getX()
+comment6.params=
+comment6.target=void\ setStepY()
+comment7.params=
+comment7.target=void\ setStepX()
+comment8.params=
+comment8.target=void\ draw()
+comment8.text=Draw\ the\ ball\ on\ the\ Graphics\ Pane\ in\ its\ current\ position
+numComments=9
