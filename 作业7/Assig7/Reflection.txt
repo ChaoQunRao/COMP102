@@ -1,0 +1,40 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+
+Questions for Reflection: 
+=========================
+
+
+0. List which methods of the WaveformAnalyser you completed.
+
+I have completed all the methods required for this assigment.
+But in order to complete the part of Challedge I add a new button to set the mouseListener.
+However, although I have completed all the methods, because I don't quite understand the requirements 
+of each part, there may be some deviations between the results of some parts and the operation requirements.
+
+1. Explain why  ArrayLists are better than using lots of variables when your program needs to store lots of values.
+
+First, because when we need to store a variable, we need to declare and assign values to it. 
+When the size of the data becomes larger, many variables need to be declared in the code to be stored. 
+It is very troublesome for us to declare variables one by one in the code and we also need to ensure that there are no duplicate names. 
+Secondly, many times we don't know how many values need to be stored, so it is very convenient to use arrays. And because ArrayList is a dynamic array, 
+memory can be expanded at any time and stored values can be deleted at any time, it is also very convenient to use dynamic arrays to process large amounts of data.
+
+2. ArrayLists allow you to write programs with collections of data, but so do files. What are the similarities and differences between files and ArrayLists.  What can you do with one that is hard or impossible with the other?
+
+The similarity between ArrayList and files is that they can both be used to store large amounts of data and can also be read by code,
+ but ArrayList can specify a value by the location of the data, while files can only get a value by traversing the file. Both files and ArrayList can 
+write data through code, but ArrayList can be inserted at the specified location, deleted or replaced at the specified location, that is, arrays are very 
+flexible when it comes to data processing, but arrays can only store one type, both of which are Object types, while files can store characters and numbers, 
+so it is very convenient to use files to store data, but arrays can store objects of classes, which is almost irreplaceable.
+
+Finally, if you mean whether I can use the file ( or ArrayList ) to do with some features in the ArrayList ( or file ), 
+then I think if I use the file to modify data, such as the Add method, I will add a number to each value of the file and
+ then read two values at a time, one number and one value, before storing these numbers and each value, so that I can access the values 
+in the file through the location. However, I think it is very troublesome and complicated to modify the values of files in real time.
+If you use ArrayList to complete some functions of the file, I think storing different types of data can only be done by declaring
+two different types of ArrayList, and ArrayList will be emptied when the program exits, so it cannot be permanently saved.
+(I don't quite understand the meaning of the last question)
