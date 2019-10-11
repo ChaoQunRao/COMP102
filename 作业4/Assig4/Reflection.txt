@@ -1,0 +1,35 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+
+Questions for Reflection: 
+=========================
+
+1. The series of methods in ClassTimes were progressively more tricky. Identify
+what it was about the later ones that made them more difficult.
+
+Because the requirements for data become more accurate, 
+each set of data must be read accurately and it becomes more difficult to 
+process the data, such as " = =" for judging the time and " equals" for judging the 
+room number. It is also more difficult to create files and write data later. 
+In the challenge1, the biggest difficulty is how to calculate the average time from 
+the two time points of reading. I used forced transformation to directly convert 
+data of "double" type to "int" type. The second challenge is how to extract only 
+the first two bits of the string, but this can be done by using the " substring" method.
+
+
+2. The lines in classdata.txt were sorted by the coursecode. What queries would
+be easier or have nicer output if they had been sorted by one of the other columns?
+(1) If the file had been sorted by type, I think it will be more convenient for us to 
+look at all the methods when they are output, because all the methods do not judge 
+the course type, so the output will be sorted directly according to the course type. 
+(2) If the file had been sorted by day, then the "PrintRoomsOnDay" 
+and "pitentialDisruptions" will be sumpler.Because we can directly read the first 
+string of each line to get the number of days.
+(3)If the file had been sorted by time, the "printAtStartTime" will be sumpler, because you 
+can just read the first number and if the number you readed is not what you want, you
+can don't  print it and print the number you have readed.
+(4)If the file had been sorted by room number, the "potentialDisruptions" and 
+"inBuildingAfterTime" will be easier output and have nicer output.

@@ -1,0 +1,170 @@
+Bookings for room AM102
+----------------------------------
+Course: ALIN201
+Time: Wed 1610-1800
+Session: Tutorial
+
+Course: ASIA208
+Time: Tue 1100-1300
+Session: FilmLect
+
+Course: BIOL113
+Time: Fri 1000-1050
+Session: Tutorial
+
+Course: CHEM303
+Time: Fri 1410-1500
+Session: Tutorial
+
+Course: CHIN101
+Time: Thu 1310-1400
+Session: Tutorial
+
+Course: ECON130
+Time: Wed 1410-1500
+Session: Tutorial
+
+Course: FEDU101
+Time: Mon 1310-1400
+Session: Tutorial
+
+Course: GERM315
+Time: Mon 1410-1500
+Session: Lecture
+
+Course: GERM315
+Time: Tue 1410-1500
+Session: Lecture
+
+Course: GERM315
+Time: Thu 1410-1500
+Session: Lecture
+
+Course: INFO101
+Time: Thu 1000-1050
+Session: Tutorial
+
+Course: JAPA111
+Time: Tue 1000-1050
+Session: Tutorial
+
+Course: JAPA111
+Time: Mon 1200-1250
+Session: Tutorial
+
+Course: LING111
+Time: Wed 1200-1250
+Session: Tutorial
+
+Course: MAOR003
+Time: Mon 1000-1150
+Session: Lecture
+
+Course: MATH141
+Time: Thu 1200-1250
+Session: Tutorial
+
+Course: MATH261
+Time: Wed 1510-1600
+Session: Tutorial
+
+Course: MATH311
+Time: Mon 900-950
+Session: Lecture
+
+Course: MATH311
+Time: Wed 900-950
+Session: Lecture
+
+Course: MATH335
+Time: Tue 900-950
+Session: Lecture
+
+Course: MATH335
+Time: Thu 900-950
+Session: Lecture
+
+Course: MATH335
+Time: Fri 900-950
+Session: Lecture
+
+Course: MDIA103
+Time: Fri 1510-1600
+Session: Tutorial
+
+Course: PERF134
+Time: Thu 1510-1700
+Session: Lecture
+
+Course: PERF134
+Time: Tue 1510-1700
+Session: Lecture
+
+Course: PERF134
+Time: Mon 1510-1700
+Session: Tutorial
+
+Course: PERF234
+Time: Thu 1510-1700
+Session: Lecture
+
+Course: PERF234
+Time: Tue 1510-1700
+Session: Lecture
+
+Course: PERF234
+Time: Mon 1510-1700
+Session: Tutorial
+
+Course: PERF334
+Time: Thu 1510-1700
+Session: Lecture
+
+Course: PERF334
+Time: Tue 1510-1700
+Session: Lecture
+
+Course: PERF334
+Time: Mon 1510-1700
+Session: Tutorial
+
+Course: PERF434
+Time: Thu 1510-1700
+Session: Lecture
+
+Course: PERF434
+Time: Tue 1510-1700
+Session: Lecture
+
+Course: PERF434
+Time: Mon 1510-1700
+Session: Tutorial
+
+Course: QUAN102
+Time: Fri 1100-1150
+Session: Tutorial
+
+Course: QUAN102
+Time: Fri 1200-1250
+Session: Tutorial
+
+Course: QUAN102
+Time: Tue 1310-1400
+Session: Tutorial
+
+Course: QUAN102
+Time: Fri 1310-1400
+Session: Tutorial
+
+Course: RELI335
+Time: Wed 1000-1150
+Session: Lecture
+
+Course: SOSC215
+Time: Thu 1100-1150
+Session: Tutorial
+
+Course: SOSC315
+Time: Thu 1100-1150
+Session: Tutorial
+
