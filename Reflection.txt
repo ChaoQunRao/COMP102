@@ -1,0 +1,32 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:ÈÄ³¬Èº£¨Eric£©
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+Questions for Reflection: 
+=========================
+
+Almost certainly, when you wrote your code, you had bugs in it which you had to
+fix. Some of the bugs were probably easy to identify; others probably took more
+time.
+
+1. Characterise the kinds of bugs you had to deal with (eg spelling, punctuation, ...)
+        (1). The package "ecs100" can't be found..(Because I didn't download this file)
+        (2). The array I created is out of bounds, I spend many time to fix it because I don't
+        konw the first number of the array is a[0] rather than a[1].
+        (3). When using¡°for¡±£¨A statement£©,I wana write "for(int i = 1;i<100;i++) ", but
+        I often mistake ";" and ",". Always It will be "for(int i = 1,i<100,i++)".
+        (4).  Using Chinese punctuations like "¡®¡¯ ¡£ £¨£©".
+        (5). Many of my programs can run without any mistake, but many times they can't 
+         run as I want.
+        (6). I can't think of more, because only the above impressed me deeply.
+
+
+2. What techniques for fixing the bugs were most effective for you? Can you
+think of better approaches that you could use next time?
+       (1). If the program is running incorrectly, I will find and check the wrong line of code
+         according to the system prompt.
+       (2). If the result is inconsistent with what I think, because I have the habit of doing 
+        mind maps, I will check whether my steps are wrong according to mind maps.
+       (3). I think I should write more comments in my code next time, which will make it
+         easier for me and others to understand my code.
