@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=TricolourFlagDrawer
+comment0.text=TricolourFlagDrawer\:\ draws\ a\ series\ of\ tricolour\ flags
+comment1.params=
+comment1.target=void\ doCore()
+comment1.text=\ \ \ CORE\r\n\ asks\ user\ for\ a\ position\ and\ three\ colours,\ then\ calls\ the\ \r\n\ drawThreeColourFlagCore\ method,\ passing\ the\ appropriate\ arguments\r\n
+comment2.params=x\ y\ c1\ c2\ c3
+comment2.target=void\ drawThreeColourFlagCore(double,\ double,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment2.text=\ \ \ CORE\r\n\ draws\ a\ three\ colour\ flag\ consisting\ of\ three\ vertical\ equal-width\r\n\ stripes\ at\ the\ given\ position\r\n
+comment3.params=
+comment3.target=void\ doCompletion()
+comment3.text=\ \ \ COMPLETION\r\n\ draws\ multiple\ flag\ made\ up\ of\ three\ equal\ size\ stripes\ by\ calling\ the\r\n\ drawThreeColourFlagCompletion\ method,\ passing\ the\ appropriate\ arguments\r\n
+comment4.params=bol\ x\ y\ c1\ c2\ c3
+comment4.target=void\ drawThreeColourFlagCompletion(boolean,\ double,\ double,\ java.awt.Color,\ java.awt.Color,\ java.awt.Color)
+comment4.text=\ \ \ COMPLETION\r\n\ draws\ a\ three\ colour\ flag\ consisting\ of\ three\ equal-size\ stripes\r\n\ at\ the\ given\ position\r\n\ The\ stripes\ can\ be\ either\ vertical\ or\ horizontal\r\n
+comment5.params=
+comment5.target=void\ doChallenge()
+comment6.params=x\ y
+comment6.target=void\ drawThreeColourFlagChallenge(double,\ double)
+comment6.text=\r\nAt\ first,\ I\ wanted\ to\ imitate\ the\ above\ method,\ \r\nbut\ I\ felt\ that\ if\ nine\ parameters\ were\ passed\ in\ nine\ lines\ of\ code\ would\ be\ needed,\ \r\nso\ I\ deleted\ most\ of\ the\ parameters\ in\ the\ method\ and\ kept\ only\ the\ x\ and\ y\ coordinates.\r\nThen\ I\ just\ need\ to\ create\ an\ array\ of\ these\ parameters\ and\ use\ loops\ to\ help\ me\ pass\ in\ the\ corresponding\ parameters.\r\n
+numComments=7

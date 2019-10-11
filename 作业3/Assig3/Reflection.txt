@@ -1,0 +1,39 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric	
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+
+Questions for Reflection: 
+=========================
+
+1. The Core version of drawThreeColourFlag needed 5 parameters; the Completion
+version needed 6 parameters. Suggest another parameter you could add to make it
+even more flexible.  How could you decide when to stop adding parameters to a
+method to make it more flexible?
+(1) 
+We can add another parameter of aspect ratio so that we can draw flags of more shapes,
+or add a parameter to determine the size of the flag.
+(2)
+When this parameter no longer applies to all your objects, stop adding parameters 
+because sometimes you need to do something through only a method, 
+but when some parameters are beyond the scope of what the method does, 
+we should not continue adding parameters.
+
+2. printAverage computed and printed the average, but minimumOfList just
+computed and returned the minimum - it didn't print it out.  Which design is
+better and why?  What are the advantages of making a method do multiple things,
+and what are the advantages of making a method do just one thing?
+(1)
+If we need to use this value in other methods, then our return type can be defined 
+as some data types, but if we just need to print out this value, then our method return
+ value can be " null" and then directly calculate this value in the method and print it. 
+In fact, the method with the return value is more flexible to use, so I think it is better 
+to only calculate and return the minimum value.
+(2)
+The advantage of using multiple methods is that each method can do one thing, 
+we can assign the work they should do, and finally put the parameters they need 
+to deal with inside the method body and then send them out. The advantage is that
+ it can save naming space and make it easier for us to understand other people's code. 
+Doing one thing can split the matter and turn a complex thing into a number of simple 
+things. This kind of thinking is very useful for us to write programs.
