@@ -1,0 +1,48 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+
+Questions for Reflection: 
+=========================
+
+1. What is one thing that you did in this assignment that is similar to the
+previous assignment? Was it easier this time? How did you approach doing it? 
+
+I used arrays to draw polygons during the banner drawing, and then I also used many arrays to store data this time when I finished the date verification program. 
+This is obviously more difficult because I used String arrays to store the names of seven days a week and arrays to store the number of days a month. 
+The biggest difficulty is that arrays start from 0 instead of 1. Therefore, when I assign values, I often think of the first value of arrays as A [ 1 ], 
+which makes my program often produce results I don't want.However, I have used many verification methods.
+One of the best methods is to print out each value of the array using a loop so that I can judge whether there is an error or not.
+
+2. Why did the dance method have to have a parameter (the CartoonCharacter face
+parameter)?
+
+This parameter like a member variable in our dance method. without this parameter, 
+we cannot assign the characters we defined in other methods to the characters in dance.
+In Java, ¡°face¡± refers to an address, but the value of this address is determined by the person address we gave it. for example, 
+you defined ¡°face¡± and then we also defined people as a person object£¬
+then we can run our people object in the face method by giving the address of people to face.
+This is difficult to explain in English because I'm a Chinese, but I have drawn the memory structure diagram of Java, 
+so I am very clear about how the object works.
+
+3. When using seval "if" statements, you can use a sequence of separate "if"
+statements or you can combine them into a longer "if... else if .... else if ...."
+statement.  What's the difference, and which is better?
+
+If it is a simple " if" statement, then the condition of each " if" statement will be judged whether or not to execute, 
+but " else if" is judged to be " false" if the previous condition,
+then the content of " else if" will be judged under the previous " false" condition.
+The difference between them is very big, but it doesn't say which is better. When you judge the same variable, 
+such as A = = 1 or A = = 2, using the " else if" statement can make your code more concise and logical.
+ However, when the conditions of the two judgments have nothing to do with the operation to be performed, 
+such as:
+if(a == 1){
+	a =0;
+}
+if(b == 1){
+	b =0;
+}
+At this time, the two conditions are not related and the operations within the statement are not related. 
+Using the " else if" statement will cause logic confusion and error instead.

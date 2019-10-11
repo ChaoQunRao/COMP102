@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=DateValidator
+comment0.text=\r\n\ Reads\ a\ date\ from\ the\ user\ as\ three\ integers,\ and\ then\ checks\ that\ the\ date\ is\ valid\r\n
+comment1.params=
+comment1.target=void\ doCore()
+comment1.text=\r\n\ Asks\ user\ for\ three\ integer\ and\ then\ checks\ if\ it\ is\ a\ valid\ date.\r\n
+comment2.params=day\ month\ year
+comment2.target=void\ validateDateCore(int,\ int,\ int)
+comment2.text=\ CORE\r\n\ Determines\ whether\ the\ date\ specified\ by\ the\ three\ integers\ is\ a\ valid\ date.\r\n\ For\ the\ Core,\ you\ may\ assume\ that\r\n\ -\ All\ months\ have\ 31\ days,\ numbered\ 1\ to\ 31\r\n\ -\ The\ months\ run\ from\ 1\ to\ 12\r\n\ -\ Years\ start\ from\ 1\ \r\n
+comment3.params=
+comment3.target=void\ doCompletion()
+comment3.text=\r\n\ Asks\ user\ for\ three\ integer\ and\ then\ checks\ if\ it\ is\ a\ valid\ date.\r\n
+comment4.params=day\ month\ year
+comment4.target=void\ validateDay(int,\ int,\ int)
+comment4.text=\ COMPLETION\r\n\ Determines\ whether\ the\ date\ specified\ by\ the\ three\ integers\ is\ a\ valid\ date.\r\n\ For\ the\ Completion,\ you\ should\ check\ that\r\n\ -\ Months\ have\ the\ correct\ number\ of\ days\r\n\ -\ Years\ have\ 4\ digits\ (between\ 1000\ and\ 9999)\r\n\ -\ On\ leap\ years\ February\ should\ have\ 29\ days.\r\n\ \ \ \ A\ year\ is\ a\ leap\ year\ if\:\r\n\ \ \ \ \ \ \ -\ The\ year\ can\ be\ evenly\ divided\ by\ 4\ but\ not\ 100,\ \ OR\r\n\ \ \ \ \ \ \ -\ The\ year\ can\ be\ evenly\ divided\ by\ 400\ \r\n
+comment5.params=day\ month\ year
+comment5.target=void\ validateDateCompletion(int,\ int,\ int)
+comment6.params=
+comment6.target=void\ doChallenge()
+comment6.text=\r\n\ Asks\ user\ for\ three\ integer\ and\ then\ checks\ if\ it\ is\ a\ valid\ date.\r\n
+comment7.params=day\ week\ month\ year
+comment7.target=void\ validateDateChallenge(int,\ int,\ int,\ int)
+comment7.text=\r\n\ Suppose\ January\ 1st\ of\ this\ year\ (\ 2018\ )\ is\ Monday\ (\ actually\ it\ is\ )\r\n\ then\ we\ can\ start\ our\ programing.\r\n
+numComments=8

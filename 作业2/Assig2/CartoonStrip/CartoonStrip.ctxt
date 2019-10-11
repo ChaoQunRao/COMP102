@@ -1,0 +1,28 @@
+#BlueJ class context
+comment0.target=CartoonStrip
+comment0.text=\ Program\ to\ create\ simple\ animated\ cartoon\ strips\ using\ the\r\n\ \ CartoonCharacter\ class.\ \ \r\n
+comment1.params=
+comment1.target=void\ animate()
+comment1.text=\ animate\ creates\ two\ cartoon\ characters\ on\ the\ window.\r\n\ \ Then\ animates\ them\ according\ to\ a\ fixed\ script\ by\ calling\ a\ series\r\n\ \ of\ methods\ on\ the\ characters.\r\n
+comment10.params=people\ dir
+comment10.target=void\ turn(CartoonCharacter,\ java.lang.String)
+comment2.params=
+comment2.target=void\ threeDancers()
+comment2.text=\ threeDancers\ creates\ three\ cartoon\ characters\ on\ the\ window.\r\n\ \ Then\ makes\ each\ character\ do\ the\ same\ little\ dance\ in\ turn,\r\n\ \ by\ calling\ the\ dance\ method.\r\n
+comment3.params=face
+comment3.target=void\ dance(CartoonCharacter)
+comment3.text=\ Makes\ a\ character\ do\ a\ little\ dance.\r\n\ Has\ one\ parameter\ -\ a\ CartoonCharacter\ object\r\n
+comment4.params=
+comment4.target=void\ doChanlledge()
+comment4.text=\r\n\ This\ is\ the\ first\ code,\ but\ I\ improved\ it,\ so\ the\ real\ code\ is\ below.\r\n\ \r\n\ \ \ \ public\ void\ yourStory(){\r\n\ \ \ \ \ \ \ \ CartoonCharacter\ Eric\ \=\ new\ CartoonCharacter(100,100,"blue");\r\n\ \ \ \ \ \ \ \ CartoonCharacter\ Chara\ \=\ new\ CartoonCharacter(500,100,"yellow");\r\n\ \ \ \ \ \ \ \ String\ cha\ \=\ null;\r\n\ \ \ \ \ \ \ \ String\ action\ \=\ null;\r\n\ \ \ \ \ \ \ \ String\ word\ \=\ null;\r\n\ \ \ \ \ \ \ \ String\ think\ \=\ null;\r\n\ \ \ \ \ \ \ \ int\ dist\ \=\ 0;\r\n\ \ \ \ \ \ \ \ String\ dir\ \=\ "right";\r\n\ \ \ \ \ \ \ \ Boolean\ finish\ \=\ false;\r\n\ \ \ \ \ \ \ \ for(int\ i\ \=\ 0;i<\=\ 100000;i++){\r\n\ \ \ \ \ \ \ \ \ \ \ \ cha\ \=\ null;\r\n\ \ \ \ \ \ \ \ \ \ \ \ action\ \=\ null;\r\n\ \ \ \ \ \ \ \ \ \ \ \ word\ \=\ null;\r\n\ \ \ \ \ \ \ \ \ \ \ \ think\ \=\ null;\r\n\ \ \ \ \ \ \ \ \ \ \ \ dist\ \=\ 0;\r\n\ \ \ \ \ \ \ \ \ \ \ \ dir\ \=\ null;\r\n\ \ \ \ \ \ \ \ \ \ \ \ finish\ \=\ false;\r\n\ \ \ \ \ \ \ \ \ \ \ \ cha\ \=\ UI.askString("Who\ do\ you\ want\ to\ start\ the\ action\ on?(Eric\ or\ Chara)");\r\n\ \ \ \ \ \ \ \ \ \ \ \ if(cha\ \=\=\ "Eric"){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.story(action,word,think,dir,dist,Eric);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ finish\ \=\ UI.askBoolean("Finished?");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(finish\ \=\=\ true){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ else{\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ this.story(action,word,think,dir,dist,Chara);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ finish\ \=\ UI.askBoolean("Finished?");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if(finish\ \=\=\ true){\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ break;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ }\r\n\ \ \ \ public\ void\ story(String\ action,String\ word,String\ think,String\ dir,int\ dist,CartoonCharacter\ face){\r\n\ \ \ \ \ \ \ \ action\ \=\ UI.askString("What\ do\ you\ want\ him\ to\ do?(Speak\ or\ Turn\ or\ Walk\ or\ Think)");\r\n\ \ \ \ \ \ \ \ if(action\ \=\=\ "Speak"){\r\n\ \ \ \ \ \ \ \ \ \ \ \ word\ \=\ UI.askString("Say\ what?");\r\n\ \ \ \ \ \ \ \ \ \ \ \ face.speakLong(word);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if(action\ \=\=\ "Think"){\r\n\ \ \ \ \ \ \ \ \ \ \ \ think\ \=\ UI.askString("Think\ what?");\r\n\ \ \ \ \ \ \ \ \ \ \ \ face.think(think,dir);\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if\ (action\ \=\=\ "Walk"){\r\n\ \ \ \ \ \ \ \ \ \ \ \ dist\ \=\ UI.askInt("How\ far\ to\ go?");\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ if(action\ \=\=\ "Turn"){\r\n\ \ \ \ \ \ \ \ \ \ \ \ dir\ \=\ UI.askString("Where\ to\ turn?");\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment5.params=
+comment5.target=void\ Eric()
+comment6.params=
+comment6.target=void\ Chara()
+comment7.params=people
+comment7.target=void\ speak(CartoonCharacter)
+comment8.params=people\ dir
+comment8.target=void\ think(CartoonCharacter,\ java.lang.String)
+comment9.params=people
+comment9.target=void\ walk(CartoonCharacter)
+numComments=11
