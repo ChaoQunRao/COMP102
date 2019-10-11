@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=test
+comment1.params=
+comment1.target=void\ testTopic()
+comment2.params=left\ top\ height
+comment2.target=void\ drawCircles(double,\ double,\ double)
+numComments=3

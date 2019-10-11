@@ -1,0 +1,40 @@
+/* Reflection.txt for XMUT102 - 2018T2
+ * Name:Eric
+ * Username:xmut_1712409237
+ * ID:1712409237
+ */
+
+Questions for Reflection: 
+=========================
+
+
+1. Explain why "off-by-one" errors are so easy to make when programming with
+arrays.
+
+Since the positions of the array and ArrayList start from 0, if you forget to read them start at position zero, 
+it is easy for the array to out of  the bound, while in a arrayList, if you delete the value at a certain position,
+ the positions of all values after this position will go further, which is also easy to make mistakes. 
+ If they are other object classes, special attention should be paid to determining whether 
+the value at this position is null or not. If it is null, no method can be referenced. 
+This is the most error-prone places. Therefore, it is necessary to determine whether this position is null 
+before referring to the method of values in the array every time.
+
+2. Both DominoGame and EarthquakeAnalyser used another class that was written for you.
+This saved you writing some code, but also constrained you to write the program in a particular way. 
+Discuss advantages and disadvantages you found when having a predefined class that you had to use as part of your program.
+
+Advantages: When we need to analyze earthquakes, it is very convenient to define an earthquake class to access, 
+and we can use arrays to store objects of earthquake class, especially when the earthquake value is very large, 
+we can well separate the two different classes of analysis earthquake and earthquake.The same is true for domino games, 
+where domino cards are a category and domino game classe is the program for handling objects of each domino card class,
+ so that the benefits are to encapsulate the code so that each class is ordered, domino game class is used to add buttons 
+and make rules, and domino classe are used to describe a domino card.
+
+Disadvantages: Most of the time we have some special earthquakes, or special domino cards.
+ The domino class and earthquake class we define cannot accurately describe each object. 
+Also, the parameters of each domino card defined in this way cannot be modified. We can only 
+replace the original domino card by making a new domino card, which will obviously be inconvenient.
+ If I make it, maybe I will add some methods for users to modify the attributes of the domino card.
+
+In a word, I really agree with such an approach, which is very helpful for me 
+to conceive the program, and I strongly support doing so in the program.

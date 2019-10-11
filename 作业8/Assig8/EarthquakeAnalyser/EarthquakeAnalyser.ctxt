@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=EarthquakeAnalyser
+comment0.text=\r\n\ EarthquakeAnalyser\r\n\ Analyses\ data\ about\ a\ collection\ of\ 4335\ NZ\ earthquakes\ from\ May\ 2016\ to\ May\ 2017\r\n\ Each\ line\ of\ the\ file\ "earthquake-data.txt"\ has\ a\ description\ of\ one\ earthquake\:\r\n\ \ \ ID\ time\ longitude\ \ latitude\ magnitude\ depth\ region\r\n\ Data\ is\ from\ http\://quakesearch.geonet.org.nz/\r\n\ \ Note\ bigearthquake-data.txt\ has\ just\ the\ 421\ earthquakes\ of\ magnitude\ 4.0\ and\ above\r\n\ \ \ which\ may\ be\ useful\ for\ testing,\ since\ it\ is\ not\ as\ big\ as\ the\ full\ file.\r\n\ \r\n\ Core\:\ \ two\ methods\:\r\n\ \ \ loadData\r\n\ \ \ \ \ \ Loads\ the\ data\ from\ a\ file\ into\ a\ field\ containing\ an\r\n\ \ \ \ \ \ ArrayList\ of\ Earthquake\ objects.\r\n\ \ \ \ \ \ Hint\ \:\ to\ make\ an\ Earthquake\ object,\ read\ one\ line\ from\ the\ file\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ and\ pass\ it\ as\ the\ argument\ to\ the\ Earthquake\ constructor\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ Make\ sure\ any\ previous\ values\ in\ the\ field\ are\ removed\r\n\ \ \ findBigOnes\r\n\ \ \ \ \ \ Lists\ all\ the\ earthquakes\ in\ the\ ArrayList\ that\ have\ a\ magnitude\ 5.5\ and\ over.\r\n\ \ \ \ \ \ Hint\:\ see\ the\ methods\ in\ the\ Earthquake\ class,\ especially\ getMagnitude\ and\ toString\r\n\ \ \ \r\n\ Completion\:\ one\ method\:\r\n\ \ \ findPairs\r\n\ \ Compares\ each\ Earthquake\ in\ the\ list\ with\ every\ other\ Earthquake\r\n\ \ \ \ \ \ and\ finds\ every\ pair\ of\ "close"\ earthquakes\ -\ earthquakes\ that\r\n\ \ \ \ \ \ \ \ -\ are\ within\ 1km\ of\ each\ other,\ and\r\n\ \ \ \ \ \ \ \ -\ have\ depths\ within\ 1km\ of\ each\ other,\ and\r\n\ \ \ \ \ \ \ \ -\ are\ separated\ by\ at\ least\ 24\ hours\ days\ \r\n\ \ \ \ \ \ For\ each\ pair,\ prints\r\n\ \ \ \ \ \ \ \ -\ their\ ID's,\r\n\ \ \ \ \ \ \ \ -\ the\ distance\ between\ them\r\n\ \ \ \ \ \ \ \ -\ the\ depth\ difference\r\n\ \ \ \ \ \ \ \ -\ the\ number\ of\ days\ between\ them.\r\n\r\n\ Challenge\:\ one\ method\r\n\ \ findFollowOns;\r\n\ \ \ \ \ \ Constructs\ a\ new\ ArrayList\ containing\ every\ earthquake\ with\ a\ magnitude\ that\ is\ at\ least\ 6.0\r\n\ \ \ \ \ \ For\ each\ such\ earthquake\ on\ this\ list\r\n\ \ \ \ \ \ \ -\ finds\ a\ list\ of\ all\ the\ "follow-on"\ earthquakes\:\r\n\ \ \ \ \ \ \ \ \ later\ earthquakes\ within\ a\ distance\ of\ 10km\ and\ depth\ difference\ <\=\ 10km.\r\n\ \ \ \ \ \ \ -\ If\ there\ are\ at\ least\ two\ follow-on\ earthquakes,\ then\ it\ prints\ out\r\n\ \ \ \ \ \ \ \ \ \ the\ full\ details\ of\ the\ big\ earthquake\ followed\ by\r\n\ \ \ \ \ \ \ \ \ \ ID,\ magnitude\ and\ days\ since\ the\ big\ one\ for\ each\ follow-on\ earthquake\r\n\r\n\ The\ file\ "example-output.txt"\ has\ sample\ output\ for\ the\ "bigearthquake-data.txt"\r\n\ \ \ file,\ which\ only\ contains\ earthquakes\ with\ magnitude\ 4\ and\ above.\r\n
+comment1.params=
+comment1.target=EarthquakeAnalyser()
+comment1.text=Construct\ a\ new\ EarthquakeAnalyser\ object\ and\ initialise\ the\ interface
+comment2.params=
+comment2.target=void\ setupGUI()
+comment3.params=
+comment3.target=void\ loadData()
+comment3.text=\r\n\ Load\ data\ from\ the\ data\ file\ into\ the\ earthquakes\ field\r\n
+comment4.params=
+comment4.target=void\ findBigOnes()
+comment4.text=\r\n\ Print\ details\ of\ all\ earthquakes\ with\ a\ magnitude\ of\ 5.5\ or\ more\r\n
+comment5.params=
+comment5.target=void\ findPairs()
+comment5.text=\r\n\ Print\ all\ pairs\ of\ earthquakes\ within\ 1km\ of\ each\ other\ and\ within\ 1km\ depth\ from\ each\ other\r\n\ and\ separated\ by\ at\ least\ 1\ day;\r\n
+comment6.params=
+comment6.target=void\ findFollowOns()
+comment6.text=\r\n\ Constructs\ a\ new\ ArrayList\ containing\ every\ earthquake\ with\ a\ magnitude\ that\ is\ at\ least\ 6\ \r\n\ For\ each\ earthquake\ on\ this\ list\r\n\ -\ finds\ a\ list\ of\ all\ the\ "follow-on"\ earthquakes\:\r\n\ \ \ later\ earthquakes\ within\ a\ distance\ of\ 10km\ and\ depth\ difference\ <\=\ 10km.\r\n\ -\ If\ there\ are\ at\ least\ two\ follow-on\ earthquakes,\ then\ it\ prints\ out\r\n\ \ \ \ \ the\ full\ details\ of\ the\ big\ earthquake\ followed\ by\r\n\ \ \ \ ID,\ magnitude\ and\ days\ since\ the\ big\ one\ for\ each\ follow-on\ earthquake\r\n
+comment7.params=arguments
+comment7.target=void\ main(java.lang.String[])
+numComments=8
